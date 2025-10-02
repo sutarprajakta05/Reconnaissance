@@ -237,8 +237,6 @@ scanme.nmap.org’s IP address, 45.33.32.156
 ```
 You can see that the search yields different data than our port scan, and provides additional information about the server.
 
-![[Screenshot 2025-09-24 213135 1.png]]
-
 - Alternatives to Shodan include ==Censys== and ==Project Sonar==
 
 ---
@@ -306,16 +304,10 @@ gobuster dir -u target_url -w wordlist
 -  https://www.zaproxy.org/ has a built-in web spider you can use.
 - This open source security tool includes a scanner, proxy, and many other features
 - Burp Suite has an equivalent tool called the crawler.
-![[Pasted image 20250926103233.png]]
-
 1. Access its spider tool by opening ZAP and choosing Tools-->Spider
-![[Screenshot 2025-09-26 103404.png]]
 2. You should see a window for specifying the starting URL
-![[Pasted image 20250926103836.png]]
 3. Click Start Scan. You should see URLs pop up in the bottom window
-![[Pasted image 20250926104016.png]]
 4. You should also see a site tree appear on the left side of your ZAP window. This shows you the files and directories found on the target server in an organized format.
-![[Pasted image 20250926104526.png]]
 
 ---
 ##### Third-Party Hosting
@@ -343,7 +335,6 @@ s3 COMPANY_NAME
 - GrayhatWarfare (https://buckets.grayhatwarfare.com/) is an online search engine you can use to find publicly exposed S3 buckets
 	- It allows you to search for a bucket by using a keyword.
 	- Supply keywords related to your target, such as the application, project, or organization name, to find relevant buckets
-![[Pasted image 20250927123701.png]]
 
 - **Lazys3**
 	- you can try to brute-force buckets by using keywords. Lazys3 (https://github.com/nahamsec/lazys3/) is a tool that helps you do this.
@@ -433,8 +424,6 @@ aws s3 rm s3://BUCKET_NAME/TEST_FILE
 - consult archive websites like the **==Wayback Machine==** (https://archive.org/web/), a digital record of internet content.
 - It records a site’s content at various points in time. Using the Wayback Machine, you can ==find old endpoints, directory listings, forgotten subdomains, URLs, and files that are outdated but still in use.==
 - ==**Tomnomnom’s tool Waybackurls**== (https://github.com/tomnomnom/waybackurls/) can automatically extract end points and URLs from the Wayback Machine.
-
-![[Pasted image 20250927143611.png]]
 
 ---
 ##### Tech Stack Fingerprinting
